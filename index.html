@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Editor</title>
+    <link rel="shortcut icon" href="./img/js.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="buttons">
+            <img src="./img/icons8-home.svg" alt="">
+            <img src="./img/icons8-save-50.png" alt="">
+            <div class="switch-container">
+                <div data-switch class="switch"></div>
+            </div>
+            <div class="run"> 
+                <button data-run>Run ></button>
+            </div>
+        </div>
+        <div class="users-interface">
+            <div class="user-input">
+                <textarea data-userInput name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="user-output">
+                <textarea data-output name="" id="" cols="30" rows="10" style="pointer-events: none;"> Hello world!
+                </textarea>
+                <div class="console">
+                    Console : 
+                    <p data-consoleOutput>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    background-color: #171738;
+}
+img{
+    width: 24px;
+    height: 24px;
+}
+
+textarea{
+    padding: 10px;
+    background-color: #717fb9b8;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 100;
+    border-radius: 4px;
+    color: snow;
+}
+.main-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+.main-container .buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    width: 90%;
+    gap: 1rem;
+    /* border: 2px solid white; */
+}
+
+.buttons .switch-container{
+    padding: 10px;
+    width: 4vw;
+    height: 2vw;
+    padding: 2px;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+.switch-container .switch{
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: snow;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+.buttons > .run{
+    display: flex;
+    align-items: center;
+    
+}
+
+.buttons > .run  > button{
+    cursor: pointer;
+    outline: none;
+    color: #171738;
+    font-size: 1.2vw;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 2px;
+    transition: 0.3s ease-in;
+}
+.buttons > .run  > button:hover{
+    color: snow;
+    background-color: #171738 ;
+    border-color: snow;
+}
+
+.main-container .users-interface{
+    width: 90%;
+    min-height: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.users-interface .user-input, .user-output{
+    width: 50vw;
+    height: inherit;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.users-interface  .user-output{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.users-interface  .user-output .console{
+    width: 50vw;
+    height: 15vw;
+    color : snow;
+}
+
+.toggled{
+    margin-left: 20px;
+    background-color: red;
+}
